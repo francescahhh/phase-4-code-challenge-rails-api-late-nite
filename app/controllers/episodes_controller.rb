@@ -2,12 +2,13 @@ class EpisodesController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
     def index 
-        render json: Episode.all
+        episodes = Episode.all
+        render json: episodes, status: :ok
     end
     # shows all episodes
 
     def show
-        render json: find_episode
+        render json: find_episode, stats: :ok, serializer: EpisodeGuestsSerializer
     end
     # how you find just one episode
 
@@ -25,6 +26,6 @@ class EpisodesController < ApplicationController
     end
 
 def render_not_found_response
-            render json: {errors: "Episode not found"}, status: :not_found
+            render json: {"error": "Episode not found"}, status: :not_found
         end
 end

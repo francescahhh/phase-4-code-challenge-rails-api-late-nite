@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
- resources :guests, only: [:index]
- resources :episodes, only: [:index, :show, :destroy]
- resources :appearances, only: [:create]
+  resources :episodes, only: [:index, :show, :destroy]
+  resources :guests, only: [:index]
+  resources :appearances, only: [:create]
 end
+
+# specified which routes we will be using

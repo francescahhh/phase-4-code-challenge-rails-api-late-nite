@@ -11,7 +11,7 @@ class AppearancesController < ApplicationController
     private
 
     def appearance_params
-        params.permit(:rating)
+        params.permit(:episode_id, :guest_id, :rating)
     end
 
 # error handling stuff 
