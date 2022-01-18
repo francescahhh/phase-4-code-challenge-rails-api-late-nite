@@ -36,3 +36,26 @@ csv.each_with_index do |row, number|
 end
 
 puts '🌙 Done seeding!'
+
+# puts '🌙 Seeding data...'
+
+# e1 = Episode.create(date: "Dec. 3", number: 5)
+# e2 = Episode.create(date: "Jan. 5", number: 1)
+# e3 = Episode.create(date: "Oct. 11", number: 4)
+# e4 = Episode.create(date: "Feb. 14", number: 2)
+# e5 = Episode.create(date: "May 15", number: 3)
+
+# g1 = Guest.create(name: "Owen Wilson", occupation: "wow")
+# g2 = Guest.create(name: "Arnold Schwarzenegger", occupation: "terminator")
+# g3 = Guest.create(name: "Elmo", occupation: "puppet")
+# g4 = Guest.create(name: "Edgar Allen Poe", occupation: "author")
+# g5 = Guest.create(name: "Britney Spears", occupation: "singer")
+
+
+# Appearance.create(episode_id: e1.id, guest_id: g1.id, rating: 1)
+# Appearance.create(episode_id: e2.id, guest_id: g2.id, rating: 2)
+# Appearance.create(episode_id: e3.id, guest_id: g3.id, rating: 3)
+# Appearance.create(episode_id: e4.id, guest_id: g4.id, rating: 4)
+# Appearance.create(episode_id: e5.id, guest_id: g5.id, rating: 5)
+
+# puts '🌙 Done seeding!'
